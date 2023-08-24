@@ -7,11 +7,11 @@ const TaskForm = () => {
     e.preventDefault()
     try {
       const body = { description }
-      fetch("http://localhost:3000/tasks", {
+      fetch("https://tasklist-9x1n.onrender.com/tasks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body)
-      })
+        body: JSON.stringify(body),
+      });
       window.location = "/tasks"
     } catch (error) {
       console.log(error)
