@@ -11,7 +11,7 @@ require('dotenv').config();
 
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL
-    
+})
 
 /* const getData = async () => {
     const consulta = 'SELECT * FROM task';
