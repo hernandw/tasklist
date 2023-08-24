@@ -8,7 +8,7 @@ const TaskEdit = ({ task }) => {
     e.preventDefault();
     try {
       const body = { description };
-      await fetch(`https://tasklist-9x1n.onrender.com/${task.id}`, {
+      await fetch(`https://back-kg07.onrender.com/${task.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

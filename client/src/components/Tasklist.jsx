@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import TaskEdit from "./TaskEdit";
 
 const Tasklist = () => {
-  const baseURL = "https://tasklist-9x1n.onrender.com/tasks";
+  const baseURL = "https://back-kg07.onrender.com/tasks";
   const [description, setDescription] = useState([]);
 
   const deleteTask = (id) => {

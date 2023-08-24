@@ -7,7 +7,7 @@ const TaskForm = () => {
     e.preventDefault()
     try {
       const body = { description }
-      fetch("https://tasklist-9x1n.onrender.com/tasks", {
+      fetch("https://back-kg07.onrender.com/tasks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
